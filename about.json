@@ -1,0 +1,9 @@
+{
+  "name": "discourse-solution-filter",
+  "about_url": "https://github.com/dereklputnam/discourse-solution-filter",
+  "license_url": "https://github.com/dereklputnam/discourse-solution-filter/blob/main/LICENSE",
+  "authors": "Derek Putnam",
+  "theme_version": "1.0.0",
+  "minimum_discourse_version": "2.8.0",
+  "component": true
+}

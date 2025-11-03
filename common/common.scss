@@ -1,0 +1,124 @@
+/* Make the category-box-heading display as flex to position link and filter inline */
+/* Only apply to headings that contain the filter */
+.category-box-heading.has-filter {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1em !important;
+  flex-wrap: nowrap !important;
+}
+
+/* Make the link not take full width and allow it to shrink */
+.category-box-heading.has-filter .parent-box-link {
+  flex: 0 1 auto !important;
+  min-width: fit-content !important;
+  overflow: visible !important;
+}
+
+.solution-filter-container {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0;
+  background: transparent;
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* Allow wrapping only on medium screens where space becomes tight */
+@media (max-width: 1200px) {
+  .category-box-heading.has-filter {
+    flex-wrap: wrap !important;
+  }
+}
+
+.solution-filter-label {
+  font-size: 0.7em;
+  color: var(--primary-medium);
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.solution-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  flex-wrap: wrap;
+}
+
+.solution-btn {
+  border: none;
+  padding: 3px 8px;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.15s ease;
+  color: #1A1536 !important;
+  background: var(--primary-low) !important;
+  font-size: 0.65em;
+  white-space: nowrap;
+  text-decoration: none !important;
+  display: inline-block;
+  background-clip: padding-box;
+}
+
+.solution-btn.active {
+  background: var(--tertiary) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.solution-btn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .category-box-heading.has-filter {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75em;
+    flex-wrap: wrap !important;
+  }
+
+  .solution-filter-container {
+    padding: 0.5em;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .solution-filter-bar {
+    gap: 0.4em;
+  }
+
+  .solution-btn {
+    padding: 5px 10px;
+    font-size: 0.75em;
+  }
+
+  .solution-filter-label {
+    font-size: 0.85em;
+  }
+}
+
+
+/* Product solution badges */
+.product-solution-badges {
+  display: flex;
+  gap: 0.3em;
+  margin-top: 0.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.solution-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 0;
+  font-size: 0.7em;
+  font-weight: normal;
+  color: #1A1536 !important;
+  background: var(--primary-low) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}

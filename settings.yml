@@ -1,0 +1,41 @@
+solution_dspm_categories:
+  type: list
+  list_type: compact
+  default: "18,19,21,22"
+  description: "Category IDs for DSPM solution (Netwrix Auditor, Access Analyzer, Data Classification, Endpoint Protector)"
+
+solution_directory_categories:
+  type: list
+  list_type: compact
+  default: "18,23,25"
+  description: "Category IDs for Directory solution (Auditor, Directory Manager, Password Policy Enforcer)"
+
+solution_endpoint_categories:
+  type: list
+  list_type: compact
+  default: "22,28,20"
+  description: "Category IDs for Endpoint solution (Endpoint Protector, Endpoint Policy Manager, Change Tracker)"
+
+solution_identity_categories:
+  type: list
+  list_type: compact
+  default: "34,23,25,181,182"
+  description: "Category IDs for Identity solution (Identity Manager, Directory Manager, Password Policy Enforcer, Platform Governance for NetSuite, Platform Governance)"
+
+solution_itdr_categories:
+  type: list
+  list_type: compact
+  default: "27,19,32,33,30"
+  description: "Category IDs for ITDR solution (PingCastle, Access Analyzer, Threat Manager, Threat Prevention, Recovery)"
+
+solution_pam_categories:
+  type: list
+  list_type: compact
+  default: "29,28,26"
+  description: "Category IDs for PAM solution (Privilege Secure, Endpoint Privilege Manager, Password Secure)"
+
+unmapped_product_categories:
+  type: list
+  list_type: compact
+  default: "17,188"
+  description: "Category IDs for products that aren't mapped to any solution (1Secure, Activity Monitor)"
